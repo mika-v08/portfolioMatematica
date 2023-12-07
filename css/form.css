@@ -1,0 +1,67 @@
+body {
+    background-image: radial-gradient(circle, rgb(219, 161, 170), white);
+}
+
+.grupo {
+    margin: auto;
+    width: 75%;
+    border: 2px solid lightcoral;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+
+input[type=radio] {
+    display: inline;
+    width: 2%;
+}
+
+input,
+fieldset,
+select {
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid rgb(176, 100, 113);
+}
+
+label {
+    padding: 10px;
+    font-weight: bold;
+    display: inline;
+
+}
+
+#btn {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: 5px solid green;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+#bt {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+#title {
+    color: brown;
+    border-radius: 20px;
+    border: 2px rgb(78, 11, 11) solid;
+    padding: 3px;
+    box-shadow: 3px 3px 5px lightcoral;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

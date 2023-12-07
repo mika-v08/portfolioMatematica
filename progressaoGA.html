@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA e PG</title>
+    <link href="./css/papg.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript OBS: colocar no final do arquivo html -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar fixed top navbar-expand-sm bg-danger navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funcoesLogaritmicas.html">Funções Logarítmicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funcoesmodulares.html">Funções Modulares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progressaoGA.html">Progressão Aritmética e Geométrica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matFinanceira.html">Matemática Financeira</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Formulário de avaliação</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="title">
+        <h1>Progressão Aritmética e Geométrica</h1>
+    </div>
+
+    <div id="text">
+        <h4>As progressões são sequências de números que geram outras novas sequências.</h4>
+        <p id="text">A Progressão Aritmética é uma sequência de números gerados por uma conta de operações matemáticas.
+        </p>
+        <p id="text">Pode ser definida dessa maneira: A SOMA DE UM TERMO INICIAL (a1), POR OUTRO CHAMADO RAZÃO (r).</p>
+        <p id="text">Então para resolver uma PA é necessário analisar os números e ver a razão da sequência.</p>
+        <p id="text">Analise uns exemplos a seguir, para depois tentar pegar a lógica.</p>
+    </div>
+
+    <div>
+        <h3>Exemplo 1:</h3>
+        <p>Na sequência 12, 14, 16,.......</p>
+        <p>Nota-se que esses números são sequências de números pares, uma PA de números pares.</p>
+        <p>Podemos analisar outra perspectiva, por exemplo o nosso a1 é o n° 12 e os próximos são a SOMA do a1 pela
+            RAZÃO que é o n°2. Pois 12 + 2 = 14, 14 + 2 = 16.</p>
+    </div>
+
+    <div>
+        <h3>Exemplo 2:</h3>
+        <p>Na sequência 13, 15, 17, 19,......</p>
+        <p>Nota-se que esse números são ímpares, uma PA de números ímpares.</p>
+        <p>Podemos analisar outra perspectiva, por exemplo o nosso a1 é o n° 13 e os próximos termos são a SOMA do a1
+            pela RAZÃO que é o n° 2.</p>
+    </div>
+
+    <div>
+        <h3>Exemplo 3:</h3>
+        <p>Na sequência 128, 256, 512, 1024......</p>
+        <p>Nota-se que esse números são o dobro de si mesmo, uma PA de números elevados a uma potência.</p>
+        <p>Podemos analisar que essa potência é o a1 elevado ao quadrado, ou seja VEZES o n° 2, a nossa razão é
+            novamente o 2.</p>
+        <p>Pois, 128 x 2 = 256, 256 x 2 = 512.... e assim consecutivamente.</p>
+    </div>
+
+    <div id="titulo">
+        <h3>Sequência de Fibonacci</h3>
+    </div>
+
+    <div>
+        <p id="text">A sequência de Fibonacci é uma série matemática que diz que, cada n° é a soma dos dois anteriores,
+            iniciando
+            geralmente por 0 e 1. A sequência começa praticamente assim, 0,1,1,2,3,5,8,13,21...., e assim, por diante.
+        </p>
+        <p>Veja um exemplo: 1,1,2,3,5,8,13,21,34,55.....</p>
+        <p>Nessa sequência teve a presença da ideia de Fibonacci, onde 1 + 1 = 2, 2 + 1 = 3, 3 + 5 = 8, e assim vai
+            indo.</p>
+    </div>
+
+    <div>
+        <h3 id="destaque">Termo Geral e outras fórmulas. </h3>
+        <h4>Termo Geral, an= a1 + (n-1). r</h4>
+        <p>O an em alguns casos pode ser o termo que precisamos descobrir;</p>
+        <p>a1 é o nosso primeiro termo da PA;</p>
+        <p> O .r significa que temos que multiplicar pela razão.</p>
+        <br>
+        <h4>r= an - an-1</h4>
+        <p>Essa fórmula nos ajuda a encontrar a RAZÃO.</p>
+        <p>A diferença que pode ser notada é que an é menos ele menos, mas antes tem que fazer menos 1 e depois
+            continuar a conta.</p>
+        <br>
+        <h4>Sn= (a1 + an). n/2</h4>
+        <p>Essa fórmula nos possibilita de realizar a soma de todos os termos de uma PA;</p>
+        <p>Sn é a sigla da soma dos termos;</p>
+        <p>a1 é o primeiro termo da PA;</p>
+        <p>an é o n° total de termos;</p>
+        <p>O .n quer dizer que depois de realizar o que está dentro dos parênteses, temos que multiplicar por n, que é o
+            n° dos termos que precisam ser somados, muitas vezes dados no enunciado do exercício.</p>
+        <p>Logo após isso, temos que dividir o resultado final por dois, e assim vamos obter a soma dos termos de uma
+            PA.</p>
+        <h4>an= ak + (n-k). r</h4>
+        <p>Fórmula usada com a mesma finalidade do termo geral;</p>
+        <p>O ak é um elemento anterior do an.</p>
+    </div>
+
+    <h3 id="destaque">Analise alguns Exercícios sobre PA.</h3>
+
+    <div>
+        <h4>Exercício 1:</h4>
+        <p>Qual é o 50° termo da Pa (3,5,7)?</p>
+        <p>Dados:</p>
+        <ul>
+            <li>a1= 3</li>
+            <li>r= 2</li>
+            <li>a50= ?</li>
+            <li>n= 50</li>
+        </ul>
+        <p>an= a1 + (n-1). r</p>
+        <p>a50= 3 + (50-1). 2</p>
+        <p>a50= 3 + 98</p>
+        <p>a50= 101</p>
+        <br>
+        <p>Com a separação de dados tudo fica mais fácil, como o exercício pedia para descobrir o 50° termo, usei o
+            termo geral.</p>
+    </div>
+
+    <div>
+        <h4>Exercício 2:</h4>
+        <p>Considere a seguinte PA, 3,7,11,15,... Determine a razão da Progressão.</p>
+        <p>Vamos identificar o an e o an-1, que é o que precisamos para a fórmula.</p>
+        <p>an= 15, pois é o n° total de termos.</p>
+        <p>an-1= 11</p>
+        <p>Perceba que temos dois termos consecutivos, o quarto e o terceiro, para essa fórmula podemos sempre pegar
+            dois termos consecutivos para facilitar a resolução.</p>
+        <p> Aplique a fórmula r= an - an-1</p>
+        <p>r= 15 - 11</p>
+        <p> a razão calculada é, r= 4.</p>
+        <p>Agora analise, 3 + 4= 7, 7 + 4= 11..... ou seja, a razão está correta.</p>
+    </div>
+
+    <div>
+        <h4>Exercício 3:</h4>
+        <p>Calcule a soma dos 25 termos iniciais da PA (1,7,13,...)</p>
+        <p>Dados:</p>
+        <ul>
+            <li>a1= 1</li>
+            <li>r= 6</li>
+            <li>a25= ?</li>
+        </ul>
+        <p>Precisamos encontrar o a25, então, a25= a1 + 24.6 = 145</p>
+        <p>Sn= (1 + 145). 25/2</p>
+        <p>sn= 146.25/2</p>
+        <p>Sn= 146/2.25</p>
+        <p>Sn= 73.25= 1825</p>
+        <p>Assim descobrimos a soma dos 25 termos da PA, eu precisei encontrar o a25 para definir o an da fórmula da
+            soma.</p>
+    </div>
+
+    <h3 id="destaque">PA e Função Afim</h3>
+    <p>No gráfico da PA em relação a função afim, não pode ser traçada retas, pois irá indicar pontos que a PA não tem,
+        é necessário que deixe apenas os pontos ligados por linhas pontilhadas.
+    </p>
+
+    <h3 id="destaque">Progressão Geométrica</h3>
+    <p id="text">Na PG temos como característica a multiplicação dos termos.
+        Agora a nossa razão será representada pela letra "q".</p>
+    <p id="text">Podemos definir uma PG da seguinte maneira: A MULTIPLICAÇÃO DE UM TERMO INICIAL (a1), POR UMA RAZÃO
+        (q).</p>
+    <p id="text">Nessa Progressão é necessário analisar por qual número os termos estão sendo multiplicados.</p>
+
+    <div>
+        <h3 id="destaque">Analise alguns exemplos.</h3>
+        <h4>Exemplo 1:</h4>
+        <p>Na sequência 1,2,4,8,16,....</p>
+        <p>Percebemos que, o a1= 1</p>
+        <p>Outra característica é que são apenas números PARES, que vão sendo alternados de dois em dois, o que já
+            podemos estabelecer que q=2.</p>
+        <p>Pois, 1.2= 2 2.2= 4 4.2= 8 .... e assim consecutivamente.</p>
+    </div>
+
+    <div>
+        <h4>Exemplo 2:</h4>
+        <p>Na sequência 4,4,4,4....</p>
+        <p>O a1= 4 e como esse número se repete constantemente podemos analisar que q=1.</p>
+        <p>O a1 é multiplicado por 1, o que vai dar origem a uma PG com números repetidos.</p>
+    </div>
+
+    <p id="text">Com esses exemplos já entendemos que uma PG é multiplicada, agora é necessário estabelecer
+        características à elas, as mesmas podem ser CRESCENTES, DECRESCENTES, CONSTANTES E ESTACIONÁRIAS.</p>
+    <p id="text">Para isso, veja abaixo como podemos diferenciá-las.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="bg-danger">
+                    <h1 id="colunas">Classificação</h1>
+                    <p> q > 1 0 < q < 1 CRESCENTE</p>
+                            <p>A razão tem que ser maior que 1 ou estar entre 0 e 1 para ser crescente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="bg-danger">
+                <h1 id="colunas">Classificação</h1>
+                <p>a1 = 0 q = 1 CONSTANTE</p>
+                <p>O a1 precisa ser igual a 0 e a razão precisa ser igual a 1.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="bg-danger">
+                <h1 id="colunas">Classificação</h1>
+                <p>0 < q < 1 q> 1 DECRESCENTE</p>
+                <p>O q precisa estar entre 0 e 1 ou ser maior que 1.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="bg-danger">
+                <h1 id="colunas">Classificação</h1>
+                <p>q = 0 a1 ≠ 0 ESTACIONÁRIA</p>
+                <p>O q precisa ser igual a 0 e o a1 precisa ser diferente de 0.</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3 id="destaque">Termo Geral e outras fórmulas. </h3>
+        <h4> Termo Geral, an= a1 . q^ n-1</h4>
+        <p>o an é o n° de termos no total da PG;</p>
+        <p>a1 é o primeiro termo;</p>
+        <p>q é a razão, que precisa ser elevada à n-1, onde n é o n° de termos menos 1;</p>
+        <br>
+        <h4>Soma dos termos d PG, Sn= a1 . 1- q^n / 1 - q</h4>
+        <p>Nessa fórmula o a1 tem que ser multiplicado por 1 - q^n;</p>
+        <p>Logo dividido por 1 - q.</p>
+    </div>
+
+    <div>
+        <h4 id="destaque">Analise dois exemplos, cada um vai exemplificar uma das fórmulas.</h4>
+        <h3>Exercício 1:</h3>
+        <p>Quantos elementos tem a PG (8, 32,......, 2^31)?</p>
+        <p>Dados:</p>
+        <ul>
+            <li>a1= 8</li>
+            <li>q= 4</li>
+            <li>an= 2^31</li>
+        </ul>
+        <p>An= a1.q^n-1</p>
+        <p>2^31= 2^3. 2^2(n-1)</p>
+        <p>Para resolvermos melhor realizamos a decomposição do a1 e do q.</p>
+        <p>Que resultou em 2^3 que o resultado é 8, e 2^2 que o resultado é 4.</p>
+        <p>Logo cortamos o 2 do segundo e do primeiro lado, que são as bases e passamos o 3 para o expoente, ficando da
+            seguinte forma.</p>
+        <p>31= 2n-2+3</p>
+        <p>Agora, é só fazer a operação matemática do -2 com +3 que fica +1</p>
+        <p>Então obtivemos, 31= 2n+1</p>
+        <p>Passa o 1 para frente da igualdade, diminuindo o 31</p>
+        <p> 31-1= 2n</p>
+        <p>30= 2n</p>
+        <p>Isolamos o n e passamos o 30 para o lado da igualdade dividindo pelo 2.</p>
+        <p>n= 30/2</p>
+        <p> RESULTADO n=15</p>
+    </div>
+
+    <div>
+        <h4>Exercício 2:</h4>
+        <p>A soma dos 10 termos iniciais da PG (1,3,9,27,...)?</p>
+        <p>Dados:</p>
+        <ul>
+            <li>a1= 1</li>
+            <li>q= 3</li>
+            <li>n=10</li>
+        </ul>
+        <p>S10= 1. 1-3^10/ 1-3</p>
+        <p>S10= 1 - 59049/ -2</p>
+        <p>Elevamos o 3 na 10 e obtivemos o resultado =59049</p>
+        <p>E na divisão foi realizada a operação matemática 1-3 que resultou em -2</p>
+        <p>S10= 59048/ 2</p>
+        <p>RESULTADO S10= 29524</p>
+    </div>
+
+    <h3 id="destaque">PG e Função exponencial</h3>
+    <p>O gráfico tem que ser só a ligação dos pontos sem reta traçada, assim como na PA.</p>
+
+    <h3 id="destaque">Interpolações na PA e PG</h3>
+    <p>A Interpolação em uma PA e uma PG envolve encontrar termos intermediários entre dados desconhecidos. Em uma PA, a
+        diferença entre os termos é CONSTANTE, enquanto em uma PG a razão entre os termos é CONSTANTE. Essa técnica é
+        muito importante para possibilitar o encontro de valores desconhecidos dentro das progressões.</p>
+
+    <h3 id="destaque">Resumindo</h3>
+    <p>Em uma PA os termos são somados por uma razão (r), e para encontrarmos essa r e valores desconhecidos temos a
+        fórmula do termo geral e outras que nos auxiliam.</p>
+    <p>Em uma PG os termos são multiplicados por uma razão (q), que para encontrarmos esse q e valores desconhecidos
+        temos a fórmula do termo geral e outras que nos auxiliam.</p>
+    <p>Uma Pg pode ser classificada como, CRESCENTE, DECRESCENTE, ESTACIONÁRIA OU CONSTANTE.</p>
+    <p>Os gráficos não podem ser traçados com retas, apenas pontos que se ligam por LINHAS PONTILHADAS, pois a reta é
+        divisível, ou seja, indica que há uma infinidade de pontos com vírgula, que a Pa e a Pg não tem.</p>
+    <p>As Interpolações nos ajudam a encontrar os valores desconhecidos no meio de uma Pa e uma Pg.</p>
+
+
+    <h4 id="bt"><a href="index.html">Início da página</a></h4>
+    <h4 id="bt"><a href="../trabalho1/index.html">Primeiro Trimestre</a></h4>
+    <h4 id="bt"><a href="../trabalho2/index.html">Segundo Trimestre</a></h4>
+</body>
+
+</html>

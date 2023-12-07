@@ -1,0 +1,36 @@
+body {
+    background-image: radial-gradient(circle, rgb(219, 161, 170), white);
+}
+
+#title {
+    color: brown;
+    border-radius: 20px;
+    border: 2px rgb(78, 11, 11) solid;
+    padding: 3px;
+    box-shadow: 3px 3px 5px lightcoral;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#bt {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+#text {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#destaque {
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
